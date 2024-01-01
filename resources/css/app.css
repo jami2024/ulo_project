@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  body {
+    @apply p-0 m-0 box-border;
+  }
+  button{
+    @apply  text-white ;
+  }
+
+  input placeholder{
+    @apply  text-[#BABABA] ;
+  }
+  textarea placeholder{
+    @apply  text-[#BABABA] ;
+  }
+}
+

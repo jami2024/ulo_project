@@ -1,0 +1,174 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f6f9ff;
+  color: #444444;
+}
+
+a {
+  color: #198754;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2a8f60;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#main {
+  margin-top: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+  #main {
+    padding: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Collapsible
+--------------------------------------------------------------*/
+.collapsible {
+  background-color: transparent;
+  color: #1d1515;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #198754;
+  color: #FFFFFF;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #1d1515;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.content-wrap {
+  padding: 10px 0px;
+}
+
+/* Add some basic styling for better presentation */
+
+.choice {
+  margin-right: 2px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.choice-new {
+  padding: 10px;
+  border: 1px dashed #198754;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.choice-update {
+  margin-right: 2px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.selected {
+  background-color: #198754;
+}
+
+.scrollable-container {
+  width: 100%; /* Set the width of the container */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent the content from wrapping to the next line */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+}
+
+.scrollable-content {
+  width: 600px; /* Set the total width of the content inside the container */
+}
+
+.item {
+  display: inline-block; /* Display items in a row */
+  width: initial; /* Set the width of each item */
+  height: 50px; /* Set the height of each item (optional) */
+  margin: 3px; /* Add some margin between items (optional) */
+
+}
+
+.choice-format {
+  margin-top: 2px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.choice-format:hover {
+  background-color: #198754;
+  color: #FFFFFF;
+}
+
+.choice-format-new {
+  padding: 10px;
+  border: 1px dashed #198754;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Variable Buttons
+--------------------------------------------------------------*/
+
+.variable-buttons {
+  border: 1px dotted #707271;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.variable-buttons:hover {
+  background-color: #198754;
+  color: #FFFFFF;
+  cursor: pointer;
+}
